@@ -4,6 +4,11 @@ const request = require("request");
 const keys = require("./keys.js");
 const spotify = new Spotify(keys.spotify);
 
+const moment = require('moment');
+moment().format();
+
+var axios = require('axios');
+
 const userOption = process.argv[2]; 
 const inputParameter = process.argv[3];
 
@@ -42,3 +47,13 @@ function showConcertInfo(inputParameter){
       console.log('Error occurred.');
     }
 });}
+
+function showSomeInfo(){
+	fs.readFile('random.txt', 'utf8', function(err, data){
+		if (err){ 
+			return console.log(err);
+		}
+        var dataArr = data.split(',');
+        UserInputs(dataArr[0], dataArr[1]);
+	});
+}
