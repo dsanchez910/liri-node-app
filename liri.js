@@ -28,4 +28,17 @@ switch (userOption) {
         
                     const datetime = response.data[i].datetime; 
                     const dateArr = datetime.split('T'); 
-
+                    const concertResults = 
+                    "--------------------------------------------------------------------" +
+                        "\nVenue Name: " + response.data[i].venue.name + 
+                        "\nVenue Location: " + response.data[i].venue.city +
+                        "\nDate of the Event: " + moment(dateArr[0], "MM-DD-YYYY"); 
+                console.log(concertResults);
+            }
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+            
+    
+    }
