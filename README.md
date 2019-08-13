@@ -7,8 +7,21 @@
 
 #### Once the command line is entered, for the concert-this entry you can add your favorite artist to find their concert dates and location. For movie-this you will be able to type the movie name and get back information on that specific movie.
 
+
 https://dsanchez910.github.io/liri-node-app/
 [LIRI-NODE-APP](https://dsanchez910.github.io/liri-node-app/)
+
+## Technologies Used:
+
+Javascript
+Nodejs
+Node packages:
+Request
+Moment
+DotEnv
+APIs used:
+Bands in Town
+OMDB
 
 
 
