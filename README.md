@@ -13,15 +13,15 @@ https://dsanchez910.github.io/liri-node-app/
 
 ## Technologies Used:
 
-Javascript
-Nodejs
-Node packages:
-Request
-Moment
-DotEnv
-APIs used:
-Bands in Town
-OMDB
+1. Javascript
+1. Nodejs
+1. Node packages:
+  1. Request
+  1. Moment
+  1. DotEnv
+1. APIs used:
+  1. Bands in Town
+  1. OMDB
 
 
 
