@@ -4,3 +4,11 @@
 
 1. concert-this
 1. movie-this
+
+#### Once the command line is entered, for the concert-this entry you can add your favorite artist to find their concert dates and location. For movie-this you will be able to type the movie name and get back information on that specific movie.
+
+
+### Below are examples of each.
+
+(/images/concert-this.PNG)
+Format: ![Alt Text](url)
