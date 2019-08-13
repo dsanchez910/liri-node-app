@@ -14,6 +14,9 @@ switch (userOption) {
     case "concert-this":
         concertThis(inputParameter);
         break;
+        case "movie-this":
+        movieThis(inputParameter);
+        break;
 
         };
 
@@ -43,3 +46,26 @@ switch (userOption) {
             return console.log(error);
         }
     })
+
+    function movieThis(inputParameter) {
+        if(!inputParameter){
+            inputParameter = "mr nobody";
+        }
+        axios.get("https://www.omdbapi.com/?t=" + inputParameter + "&y=&plot=short&apikey=trilogy")
+        .then(function(response) {
+                var movieResults = 
+                    "--------------------------------------------------------------------" +
+                        "\nMovie Title: " + response.data.Title + 
+                        "\nYear of Release: " + response.data.Year +
+                        "\nIMDB Rating: " + response.data.imdbRating +inputParameter +
+                        "\nCountry Produced: " + response.data.Country +
+                        "\nLanguage: " + response.data.Language +
+                        "\nPlot: " + response.data.Plot +
+                        "\nActors/Actresses: " + response.data.Actors;
+                console.log(movieResults);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+        
+    }
